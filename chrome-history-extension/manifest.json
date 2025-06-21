@@ -1,0 +1,25 @@
+{
+    "name": "Time tracking Chrome",
+    "version": "1.0",
+    "description": "Time tracking from chrome history.",
+    "permissions": [
+        "history"
+    ],
+    "action": {
+        "default_popup": "views/popup.html",
+        "default_icon": "assets/images/time-tracking.png"
+    },
+    "manifest_version": 3,
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "views/history.html",
+                "scripts/history.js",
+                "data/projects.json"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ]
+}
